@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {background-color: burlywood;}
+        h1 {text-align: center; color: darkorchid;font-size: larger;font-style: italic;font: 20pt;}
+    </style>
+    <title>Hora atual</title>
+</head>
+<body>
+   <h1>Hora em tempo real</h1>
+   <input type="text" name="txtsem" id="txtsem">
+   <input type="button" value="Escolha" onclick="verificar()">
+   <div id="res"></div>
+
+   <script>
+var agora = new Date()
+var hora = agora.getHours()
+document.write(`Agora são exatamente <strong>${hora}</strong> horas.`)
+if (hora < 12){
+    document.write('<p>Bom dia!</p>')
+} else if(hora <= 18){
+    document.write ('<p>Boa tarde!</p>')
+} else 
+    document.write ('<p>Boa noite!</p>')
+
+    function verificar(){
+     
+        
+
+        
+    }
+   </script>
+    
+</body>
+</html>

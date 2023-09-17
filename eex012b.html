@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dia da semana</title>
+</head>
+<body>
+    <script>
+        var agora = new Date()
+        var diaSem = agora.getDay()
+       
+        
+        switch(diaSem) {
+            case 0:
+                document.write ('Domingo')
+                break
+            case 1:
+                document.write ('Segunda')
+                break
+            case 2:
+                document.write ('Terça')
+                break
+            case 3:
+                document.write ('Quarta')
+                break
+            case 5:
+                document.write ('Quinta')
+            case 6:
+                document.write('Sexta Feira')
+                break
+            case 7:
+                document.write ('Sabado')
+                break   
+                default: 
+                document.write('Erro no sistema') 
+                break
+        }
+        
+</script>
+</body>
+</html>

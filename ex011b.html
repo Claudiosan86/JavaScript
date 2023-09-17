@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {text-align: center; font-style: italic; color:darkblue;}
+        button {background-color: forestgreen;}
+        body {background-color: rgb(192, 187, 187);}
+        
+        
+    </style>
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>País de origem</h1>
+
+   Digite o seu país: <input type="text" name="txtpais" id="txtpais">
+    <input type="button" value="Descobrir" onclick='analisar()'>
+    <div id="res">
+
+    </div>
+    <script>
+        function analisar() {
+           
+            var p = document.querySelector('input#txtpais')
+            var res = document.querySelector('div#res')
+            var pais = (p.value)
+            res.innerHTML = `<p>Vivendo no <strong>${pais}</strong></p>`
+            if (pais == 'Brasil') {
+                res.innerHTML += '<p>Você é <strong>Brasileiro</strong></p>'
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>

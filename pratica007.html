@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     h1 {color:rgba(0, 255, 123, 0.545);text-align: center;font:35pt italic status-bar;text-decoration: double;}
+     button {color: red; text-align: center; font: 40pt italic;background-color: aquamarine;}
+     body {background-color: rgb(59, 24, 148);}
+      {text-align:center;}
+     p {color:beige;font-style: italic;} 
+</style>
+<body>
+   <h1><strong>Treinando</strong></h1>
+   <p>Complementando diversos conteúdos em um só site. afim de obter mais conhecimento.</p>
+</body>
+<button onclick = 'Verificar()'> Primeira opção</button>
+<button onclick= 'Verificar2()'> Segunda opção  </button>
+<button onclick="Verificar3()">  Terceira opção</button>
+
+<script>
+    
+    function Verificar() {
+        
+     let nome = window.prompt('Qual é o seu nome?')
+     window.alert(`Prazer em te conhecer ${nome}`)
+    }
+    
+    function Verificar2(){
+        var idade = prompt('Qual é a sua idade?')
+        if (idade < 16) {
+           document.write('Segura a onda ai, miserável!')
+        }
+        else{
+         if(idade > 16){
+            document.write("CUMPRA A SUA MISSÃO, PATRIOTA!!");
+         }
+          }
+       }
+       
+    
+    
+    function Verificar3(){
+        let ano = Number(prompt('Em que ano você nasceu?'))
+        if (ano > 1986) {
+            document.write(`Se nasceu em ${ano} ainda fede a leite`)
+
+        }
+       else {
+        if (ano < 1986) {
+            document.write(`Se nasceu em ${ano} esta com muita dor nas costas kkkk`)
+        }
+       } 
+       
+
+    }
+
+</script>
+</html>

@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+    text-align: center;
+   
+}
+
+.conteudo {
+    width: 500px;
+    background: #606060;
+    text-align: center;
+    padding-right: 50px;
+
+}
